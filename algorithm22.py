@@ -1,15 +1,4 @@
-def solution(s, n):
-    result = ""
-    for i in s:
-        if i.isalpha():
-            if i.islower():
-                result += chr((ord(i) - ord("a") + n) % 26 + ord("a"))
-            else:
-                result += chr((ord(i) - ord("A") + n) % 26 + ord("A"))
-        else:
-            result += i
-    return result
+def solution(s):
+    return ' '.join([''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(w)]) for w in s.split(' ')])
 
-print(solution("z a",1))
-
-print(ord(" "))
+print(solution("try hello world"))
