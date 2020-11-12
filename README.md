@@ -53,3 +53,6 @@ divisor로 나누어 떨어지는 element가 하나도 없다면 배열에 -1을
 > 17 -> 서울에서 김서방 찾기(Programmers)<br>
 > String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. 
 >
+> 18 -> 소수 찾기(Programmers)<br>
+> 1부터 입력받은 숫자 n 사이에 있는 소수의 개수를 반환하는 함수, solution을 만들어 보세요.
+>
