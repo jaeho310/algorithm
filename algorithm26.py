@@ -1,7 +1,7 @@
 def solution(numbers, hand):
     answer = ''
-    left_current = 4
-    right_current = 9
+    left_current = 10
+    right_current = 11
     left_area = [1,4,7]
     right_area = [3,6,9]
     position = {
@@ -15,6 +15,8 @@ def solution(numbers, hand):
         8 : (2,1),
         9 : (2,2),
         0 : (3,1),
+        10 : (3,0),
+        11 : (3,2)
     }
 
     for i in numbers:
