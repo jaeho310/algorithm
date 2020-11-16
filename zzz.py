@@ -3,6 +3,9 @@ b = 4
 c = "abcd"
 
 d = list(c)
-print(d)
+# print(d)
 
-print(a.index(88))
+# print(a.index(88))
+
+a.remove(1)
+print(a)
