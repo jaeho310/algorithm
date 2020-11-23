@@ -1,41 +1,52 @@
+# 링크드리스트는 첫번째 노드를 알면 모든 노드를 찾아갈 수 있다.
+
 class Node:
     def __init__(self, data, next=None):
         self.data = data
         self.next = next
 
+class NodeMng:
+    def __init__(self, data):
+        self.head = Node(data)
 
-# 1. 넣기 메서드. 헤드를 첫번째 위치로 지정하고 마지막 객체까지 접근해준후 next에 객체를 생성과 동시에 넣어준다.
-def add(data):
-    node = head
-    while node.next:
-        node = node.next
-    node.next = Node(data)
+    def add(self,data):
+        if self.head == '':
+            self.head = Node(data)
+        else:
+            node = self.head
+            while node.next:
+                node = node.next
+            node.next = Node(data)
+
+    def desc(self):
+        node = self.head
+        while node:
+            print(node.data)
+            node = node.next
+
+    def delete(self, data):
+        if self.head = '':
+            print("해당값을 가진 노드가 없습니다.")
+            return
+        
+        # 데이터가 헤드에 있을때
+        if self.head.data == data:
+           temp = self.head
+           self.head = self.head.next
+           del temp
+        else: # 그외
+            node = self.head
+            while node.next:
+                if node.next.data == data:
+                    temp = node.next
+                    node.next = node.next.next
+                    del temp
+                    return
+                node = node.next
+
+        
+
+        
+        
 
 
-# 모든 링크드 리스트 출력
-def print_linked_list(head):
-    node = head
-    while node.next:
-        print(node.data)
-        node = node.next
-    print (node.data)
-
-
-# 데이터찾기 찾기
-def isexsited(target_data):
-    node = head
-    while node.next:
-        if node.data == target_data:
-            return True
-        node = node.next
-    return False
-
-node1 = Node(1)
-head = node1
-for index in range(2,10):
-    add(index)
-
-print_linked_list(node1)
-print(isexsited(3))
-
-# 더블 링크드리스트는 next와 pre를 모두 갖고있는 링크드리스트이다.

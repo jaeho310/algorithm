@@ -33,4 +33,3 @@ def solution(priorities, location):
 
 print(solution([1, 1, 9, 1, 1, 1],0))
 
-
