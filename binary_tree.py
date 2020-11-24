@@ -104,5 +104,4 @@ BST.insert(4)
 BST.insert(8)
 
 print(BST.search(2))
-BST.
 
