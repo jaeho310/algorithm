@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-def solution(n):
-    answer = ''
-    return answer
-
-=======
 from collections import deque
 
 def solution(bridge_length, weight, truck_weights):
