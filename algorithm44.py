@@ -21,9 +21,3 @@ def solution(bridge_length, weight, truck_weights):
 
 
 print(solution(2, 10, [7,4,5,6]))
-        
-
-
-
-
->>>>>>> b96df5c466a5204c968278900bdc00cdb758acb9

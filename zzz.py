@@ -10,5 +10,8 @@ d = list(c)
 
 # print(max(a))
 
-q = [(i,p) for i,p in enumerate(a)]
-print(q)
+# q = [(i,p) for i,p in enumerate(a)]
+# print(q)
+
+a = [5]
+print(a)
