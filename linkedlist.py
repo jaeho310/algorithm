@@ -25,7 +25,7 @@ class NodeMng:
             node = node.next
 
     def delete(self, data):
-        if self.head = '':
+        if self.head == '':
             print("해당값을 가진 노드가 없습니다.")
             return
         

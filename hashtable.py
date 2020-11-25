@@ -30,18 +30,5 @@ if __name__ == "__main__":
 
     print(get_data('Andy'))
 
-# def get_key(data):
-#     return hash(data)
-
-# def hash_function(key):
-#     return key % 8
-
-# def save_data(data, value):
-#     hash_address = hash_function(get_key(data))
-#     hash_table[hash_address] = value
-
-# def read_data(data):
-#     hash_address = hash_function(get_key(data))
-#     return hash_table[hash_address]
-
-
+# 공간복잡도를 팔아 시간복잡도를 챙기 해쉬테이블
+# 검색속도가 현저히 증가한다는 장점이 있다.
