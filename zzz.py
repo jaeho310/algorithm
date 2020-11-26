@@ -13,5 +13,5 @@ d = list(c)
 # q = [(i,p) for i,p in enumerate(a)]
 # print(q)
 
-a = [5]
-print(a)
+# a = [5]
+# print(a

@@ -1,4 +1,4 @@
-def fibo(n):
+def fibo(num):
     cache = [0 for i in range(num+1)]
     cache[0] = 0
     cache[1] = 1
