@@ -44,7 +44,7 @@ class NodeMng:
                     return
                 node = node.next
 
-        
+
 
         
         
