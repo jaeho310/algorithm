@@ -12,6 +12,10 @@ def dijkstra(graph, start):
     while queue:
         current_distance, current_node = heappop(queue)
 
+        if cache[current_node] < current_distance:
+            print("123")
+            continue
+
         for adjacent, weight in graph[current_node].items():
 
             # 이번노드까지 오는데 걸린 거리에서 다음노드까지의 거리를 더한다.
@@ -36,7 +40,7 @@ graph = {
     'F': {'A': 5}
 }
 
-dijkstra(graph,'A')
+print(dijkstra(graph,'A'))
 
 # 최단경로 알고리즘
 # 다익스트라 알고리즘이라고 부르며 너비우선탐색(BFS)과 유사하다
